@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image with Buttons</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	margin-top: 300px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="https://wa.me/50760016634?text=S%C3%AD%20quiero%20ir..." target="_blank"><button>Si voy!!</button></a>
+        <a href="https://maps.app.goo.gl/yPhTnX97cHJKqndt7" target="_blank"><button>Ruta</button></a>
+    </div>
+
+    <script>
+        function buttonClick(buttonId) {
+            alert('Button ' + buttonId + ' clicked!');
+        }
+    </script>
+</body>
+</html>
